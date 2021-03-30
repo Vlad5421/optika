@@ -234,8 +234,10 @@
   .frames .swiper-container1 {
     width: 100%;
   }
-  .frames .slider-start2 {
+  .frames .swiper-wrapper {
     padding-left: 0;
+    height: 334px;
+    margin-bottom: 30px;
   }
   .frames .swiper-slide.frame_item {
     margin: 0;
@@ -243,9 +245,7 @@
     box-sizing: border-box;
     padding-bottom: 0;
     box-shadow: 0px 2px 5px rgba(44, 157, 235, 0.2);
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 325px;
   }
   .frames .frame_item_img {
     width: 100%;
@@ -359,8 +359,8 @@
     display: block;
   }
   .news_index .news_item_img {
-    width: 182.5px;
-    height: 182.5px;
+    width: 183px;
+    height: 153px;
   }
   .news_index .news_item_title {
     font-size: 14px;
