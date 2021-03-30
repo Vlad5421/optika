@@ -166,15 +166,19 @@ function optika_scripts()
     wp_enqueue_style('optika-mobile-front', get_template_directory_uri() . '/assets/css/mobile-front.css', array(), _S_VERSION);
     wp_enqueue_style('swiper', get_template_directory_uri() . '/assets/js/swiper.min.css', array(), _S_VERSION);/*библиотека слайдера*/
     wp_style_add_data('optika-style', 'rtl', 'replace');
+    // страница контакты
     if (get_the_ID() == 59) {
         wp_enqueue_style('optika-style_contacts', get_template_directory_uri() . '/assets/css/contacts.css', array(), _S_VERSION);
     }
+    // страница новости
     if (get_the_ID() == 1215) {
         wp_enqueue_style('optika-style_all-news', get_template_directory_uri() . '/assets/css/all-news.css', array(), _S_VERSION);
         wp_enqueue_style('optika-mobile-news', get_template_directory_uri() . '/assets/css/mobile-news.css', array(), _S_VERSION);
     }
+    // страница о нас
     if (get_the_ID() == 57) {
         wp_enqueue_style('optika-style_about-us', get_template_directory_uri() . '/assets/css/about-us.css', array(), _S_VERSION);
+        wp_enqueue_style('optika-mobile-about', get_template_directory_uri() . '/assets/css/mobile-about.css', array(), _S_VERSION);
     }
     // echo get_the_ID();
 

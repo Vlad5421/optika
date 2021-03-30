@@ -1,0 +1,12 @@
+@media screen and (max-width: 420px) {
+  .excellent__about__party-slider {
+    display: block;
+  }
+
+  .excellent_about__party {
+    display: block;
+  }
+  .excellent_about__party .excellent_about__party-item {
+    max-width: 100%;
+  }
+}
