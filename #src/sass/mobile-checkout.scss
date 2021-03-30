@@ -1,0 +1,35 @@
+@media screen and (max-width: 420px) {
+    .main_wrapper .entry-title {
+        font-size: 22px;
+    }
+    .checkout__duble-wrap {
+        display: block;
+    }
+    .woocommerce #customer_details {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 35px;
+    }
+    .woocommerce form .form-row label {
+        font-size: 16px;
+    }
+    .form-row-first {
+        width: 100%!important;
+    }
+    .woocommerce-checkout-review-order {
+        width: 100%;
+    }
+    .cart_totals__title {
+        font-size: 22px;
+    }
+    .woocommerce table.shop_table{
+        font-size: 16px;
+    }
+    .woocommerce-checkout-payment{
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    .woocommerce-NoticeGroup-checkout {
+        font-size: 14px;
+    }
+}

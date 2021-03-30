@@ -1,0 +1,108 @@
+.footer_bac {
+    background-image: url(../img/footer.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: #EBF2F8;
+}
+
+.footer_conteiner {
+    padding-top: 87px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.foter_nav {
+    color: #5C5C5C;
+}
+.foter_nav_title {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer_list {
+    padding: 0;
+}
+
+.footer_item {
+    margin-bottom: 15px;
+}
+
+.footer_contact {
+    text-align: right;
+}
+
+.footer_tel {
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 50px;
+    margin-left: 70px;
+    background-image: url(../img/tel1.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    
+}
+
+.footer_contact_operating {
+    padding-right: 20px;
+    margin-bottom: 70px;
+}
+
+.social_item {
+    margin-right: 10px;
+    width: 46px;
+    height: 46px;
+    background-color: #4AA1E5;
+    border-radius: 100px;
+}
+.vkontakte {
+    background-image: url(../img/social1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.facebook {
+    background-image: url(../img/social2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tweetter{
+    background-image: url(../img/social3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.odnoklassniki {
+    background-image: url(../img/social4.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.instagram {
+    background-image: url(../img/social5.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.whatsapp {
+    background-image: url(../img/social6.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.social_item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.footer_end {
+    padding-top: 20px;
+    border-top: 1px solid #DDDDDD;
+    align-items: center;    
+}
+
+.footer_end_link {
+    margin-left: 45px;
+    font-size: 15px;
+    color: #555555;
+}
