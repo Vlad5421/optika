@@ -171,6 +171,7 @@ function optika_scripts()
     }
     if (get_the_ID() == 1215) {
         wp_enqueue_style('optika-style_all-news', get_template_directory_uri() . '/assets/css/all-news.css', array(), _S_VERSION);
+        wp_enqueue_style('optika-mobile-news', get_template_directory_uri() . '/assets/css/mobile-news.css', array(), _S_VERSION);
     }
     if (get_the_ID() == 57) {
         wp_enqueue_style('optika-style_about-us', get_template_directory_uri() . '/assets/css/about-us.css', array(), _S_VERSION);
