@@ -21,11 +21,12 @@
         left: -100%;
         top: 58px;
         background-color: #fff;
-        z-index: 12;
+        z-index: 601;
         border: 1px solid #000;
         padding: 5px 20px;
         font-size: 12px;
-        width: 300px;
+        width: 85%;
+        transition: all .3s;
 
         .bapf_sfilter {
             margin-bottom: 10px;
@@ -36,11 +37,18 @@
         }
         .bapf_body > ul {
             font-size: 14px;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                margin-left: 20px!important;
+            }
         }
         .bapf_head h3 {
             margin: 0;
             margin-bottom: 5px;
         }
+
         
     }
 
@@ -132,5 +140,15 @@
                 }
             }
         }
+    }
+    .filter_btn {
+        padding: 10px 40px;
+        font-size: 13px;
+        text-transform: uppercase;
+        background-color: #38CF8A;
+        border-radius: 100px;
+        border: none;
+        color: #ffffff;
+
     }
 }

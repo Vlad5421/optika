@@ -117,15 +117,13 @@ function awoohc_add_script_update_shipping_method()
     }
 }
 
+// Некий Миша навсегда останется в истории ))
 add_filter( 'woocommerce_variable_price_html', 'truemisha_variation_price', 20, 2 );
- 
 function truemisha_variation_price( $price, $product ) {
- 
 	$min_regular_price = $product->get_variation_regular_price( 'min', true );
 	$min_sale_price = $product->get_variation_sale_price( 'min', true );
 	$max_regular_price = $product->get_variation_regular_price( 'max', true );
 	$max_sale_price = $product->get_variation_sale_price( 'max', true );
- 
 	if ( ! ( $min_regular_price == $max_regular_price && $min_sale_price == $max_sale_price ) ) {
 		if ( $min_sale_price < $min_regular_price ) {
 			$price = sprintf( 'от <del>%1$s</del><ins>%2$s</ins>', wc_price( $min_regular_price ), wc_price( $min_sale_price ) );
@@ -133,9 +131,7 @@ function truemisha_variation_price( $price, $product ) {
 			$price = sprintf( 'от %1$s', wc_price( $min_regular_price ) );
 		}
 	}
- 
 	return $price;
- 
 }
 // Изменение комментария при оформлении заказа
 add_filter( 'woocommerce_checkout_fields', 'custom_comment_order_fields', 900 );
@@ -144,13 +140,10 @@ function custom_comment_order_fields( $array ) {
     $array['order']['order_comments']['placeholder'] = 'Возможные уточнения и комментарии к вашему заказу';
     return $array;
 }
-
-
 //код марта2021/
 
 //включить редактирование шаблонов магазина/
-
- function eyeline_add_woocommerce_support()
+function eyeline_add_woocommerce_support()
 {
    add_theme_support('woocommerce');
 }
@@ -211,3 +204,15 @@ function in_woocommerce_breadcrumb_defaults($args){
     return $args;
 }
 
+// Оставляем только сортровку товаров по умолчанию ПО ПОПУЛЯРНОСТИ
+add_filter( 'woocommerce_catalog_orderby', 'filter_to_rating' );
+function filter_to_rating( $array ){
+    unset(
+            $array['menu_order'],
+            $array['popularity'],
+            $array['date'],
+            $array['price'],
+            $array['price-desc'],
+        );
+	return $array;
+}
