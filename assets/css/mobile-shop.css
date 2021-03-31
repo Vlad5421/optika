@@ -21,11 +21,12 @@
   .linz_page_filter {
     position: fixed;
     left: -100%;
-    top: 58px;
+    top: 10px;
     background-color: #fff;
     z-index: 601;
     border: 1px solid #000;
     padding: 5px 20px;
+    padding-right: 40px;
     font-size: 12px;
     width: 85%;
     transition: all 0.3s;
@@ -43,7 +44,7 @@
     flex-wrap: wrap;
   }
   .linz_page_filter .bapf_body > ul li {
-    margin-left: 20px !important;
+    margin-right: 20px !important;
   }
   .linz_page_filter .bapf_head h3 {
     margin: 0;
