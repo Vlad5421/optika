@@ -15,10 +15,17 @@
 @media screen and (max-width: 420px) {
   .breadcrumbs {
     padding-top: 50px;
-    height: 90px;
   }
   .breadcrumbs .breadcrumbs_item {
     font-size: 11px;
+  }
+
+  .display-from-mob {
+    display: block;
+  }
+
+  .display-from-pc {
+    display: none;
   }
 
   .orderby {
@@ -257,6 +264,7 @@
     text-align: center;
     text-align: center;
     margin: 0 auto 16px;
+    font-size: 22px;
   }
   .frames .preview_price {
     padding-left: 0;

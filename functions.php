@@ -169,6 +169,7 @@ function optika_scripts()
     // страница контакты
     if (get_the_ID() == 59) {
         wp_enqueue_style('optika-style_contacts', get_template_directory_uri() . '/assets/css/contacts.css', array(), _S_VERSION);
+        wp_enqueue_style('optika-mobile-contacts', get_template_directory_uri() . '/assets/css/mobile-contacts.css', array(), _S_VERSION);
     }
     // страница новости
     if (get_the_ID() == 1215) {
@@ -180,8 +181,12 @@ function optika_scripts()
         wp_enqueue_style('optika-style_about-us', get_template_directory_uri() . '/assets/css/about-us.css', array(), _S_VERSION);
         wp_enqueue_style('optika-mobile-about', get_template_directory_uri() . '/assets/css/mobile-about.css', array(), _S_VERSION);
     }
-    // echo get_the_ID();
+    if (get_page_template_slug() == 'page-shop-no-shop.php') {
+        wp_enqueue_style('optika-mobile-shop-no-shop', get_template_directory_uri() . '/assets/css/mobile-shop-no-shop.css', array(), _S_VERSION);
+    }
 
+    // echo get_the_ID();
+    
     // отменяем зарегистрированный jQuery
     wp_deregister_script( 'jquery-core' );
 	wp_register_script( 'jquery-core', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
@@ -270,8 +275,8 @@ function frames_brand()
     return ob_get_clean();
 }
 // Настройка ссылки для цитаты THE_EXERPT()
-add_filter('excerpt_length', function () {
-    return 15;
+add_filter('excerpt_length', function ($number) {
+    return 10;
 });
 add_filter('excerpt_more', function ($more) {
     return '...';

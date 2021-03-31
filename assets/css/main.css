@@ -400,7 +400,7 @@
 /*внутренние страницы*/
 .breadcrumbs {
     padding-top: 92px;
-    height: 134px;
+    /* height: 134px; */
     background-color: #EDF4FA;
 }
 
@@ -1037,7 +1037,7 @@
     background: none;
 }
 
-.display-none-pc {
+.display-from-mob {
     display: none;
 }
 

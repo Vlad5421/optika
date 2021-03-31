@@ -13,13 +13,19 @@
 
     .breadcrumbs {
         padding-top: 50px;
-        height: 90px;
+        // height: 90px;
 
         .breadcrumbs_item {
             font-size: 11px;
         }
     }
     
+    .display-from-mob {
+        display: block;
+    }
+    .display-from-pc{
+        display: none;
+    }
     .orderby {
         width: auto;
     }
@@ -257,6 +263,7 @@
             text-align: center;
             text-align: center;
             margin: 0 auto 16px;
+            font-size: 22px;
         }
         .preview_price {
             padding-left: 0;

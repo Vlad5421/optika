@@ -1,0 +1,61 @@
+@media screen and (max-width: 420px) {
+  .main_wrapper .entry-title {
+    font-size: 22px;
+  }
+
+  #post-59 .entry-title {
+    margin-top: 20px;
+  }
+
+  .contacts__top-content {
+    display: block;
+  }
+  .contacts__top-content .block__address {
+    max-width: 100%;
+    font-size: 18px;
+  }
+  .contacts__top-content .block__address .to-map {
+    display: none;
+  }
+  .contacts__top-content .block__address p {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+  .contacts__top-content .wpcf7-form {
+    width: 93%;
+    margin: 0 auto;
+    padding: 20px 20px 10px;
+    font-size: 12px;
+  }
+  .contacts__top-content .wpcf7-form .wpcf-7-tile {
+    font-size: 18px;
+  }
+  .contacts__top-content .wpcf7-form p > label > br {
+    display: none;
+  }
+  .contacts__top-content .wpcf7-form .wpcf7-form-control.wpcf7-text,
+.contacts__top-content .wpcf7-form .wpcf7-form-control.wpcf7-textarea {
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+  }
+  .contacts__top-content .wpcf7-form .wpcf7-quiz-label {
+    font-size: 16px;
+  }
+  .contacts__top-content .wpcf7-form .wpcf7-form-control.wpcf7-quiz {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+  }
+  .contacts__top-content .wpcf7-form .wpcf7-submit {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+  .contacts__top-content .wpcf7-form .wpcf7-accept-person {
+    font-size: 10px;
+  }
+
+  .block__map {
+    height: 280px;
+  }
+}

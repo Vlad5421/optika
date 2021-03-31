@@ -1,0 +1,61 @@
+@media screen and (max-width: 420px) {
+    .main_wrapper .entry-title {
+        font-size: 22px;
+    }
+    #post-59 .entry-title {
+        margin-top: 20px;
+    }
+
+    .contacts__top-content{
+        display: block;
+
+        .block__address{
+            max-width: 100%;
+            font-size: 18px;
+
+            .to-map{
+                display: none;
+            }
+            p {
+                width: 100%;
+                margin-bottom: 27px;
+            }
+        }
+
+        .wpcf7-form {
+            width: 93%;
+            margin: 0 auto;
+            padding: 20px 20px 10px;
+            font-size: 12px;
+
+            .wpcf-7-tile{
+                font-size: 18px;
+            }
+            p>label>br{display:none;}
+            .wpcf7-form-control.wpcf7-text,
+            .wpcf7-form-control.wpcf7-textarea{
+                padding: 5px;
+                font-size: 16px;
+                width: 100%;
+            }
+            .wpcf7-quiz-label{
+                font-size: 16px;
+            }
+            .wpcf7-form-control.wpcf7-quiz{
+                width: 100%;
+                font-size: 16px;
+                padding: 5px;
+            }
+            .wpcf7-submit {
+                font-size: 16px;
+                padding: 10px 30px;
+            }
+            .wpcf7-accept-person {
+                font-size: 10px;
+            }
+        }
+    }
+    .block__map {
+        height: 280px;
+    }
+}
