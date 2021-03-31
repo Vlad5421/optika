@@ -1,0 +1,30 @@
+@media screen and (max-width: 420px) {
+  .post .entry-content {
+    display: block;
+  }
+
+  .main_page {
+    padding-top: 20px;
+  }
+
+  .frames__text-new {
+    padding-left: 0;
+    font-size: 16px;
+  }
+
+  .no-product__price {
+    margin-top: 20px;
+  }
+  .no-product__price .num {
+    font-size: 36px;
+  }
+
+  .navigation.post-navigation .nav-links {
+    line-height: 1.2;
+    margin: 20px 0;
+  }
+  .navigation.post-navigation .nav-links .nav-previous, .navigation.post-navigation .nav-links .nav-next {
+    font-size: 14px;
+    max-width: 48%;
+  }
+}

@@ -10,7 +10,7 @@
 
 if (!defined('_S_VERSION')) {
     // Replace the version number of the theme on each release.
-    define('_S_VERSION', '1.2.2');
+    define('_S_VERSION', '1.2.3');
 }
 
 if (!function_exists('optika_setup')) :
@@ -183,6 +183,9 @@ function optika_scripts()
     }
     if (get_page_template_slug() == 'page-shop-no-shop.php') {
         wp_enqueue_style('optika-mobile-shop-no-shop', get_template_directory_uri() . '/assets/css/mobile-shop-no-shop.css', array(), _S_VERSION);
+    }
+    if (is_single() && in_category(['sunglasses', 'accessories', 'frames_and_brands'])) {
+        wp_enqueue_style('optika-mobile-card-no-card', get_template_directory_uri() . '/assets/css/mobile-card-no-card.css', array(), _S_VERSION);
     }
 
     // echo get_the_ID();

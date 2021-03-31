@@ -39,7 +39,6 @@ do_action( 'optika_woocommerce_breadcrumb' );
                     <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" class="linz_item_img" alt="<?= get_the_title() ?>"></a>
                     <h3 class="sun_item_title"><?php the_title(); ?><br> от <?php the_field('cena'); ?> руб.</h3>
                     <?php //the_excerpt(); ?>
-                    <?php //echo get_the_content(); ?>
                     <a href="<?php the_permalink(); ?>" class="linz_item_order" aria-label="заказать">читать дальше...</a>
         </li>
 
