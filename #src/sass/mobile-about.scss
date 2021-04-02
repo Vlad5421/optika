@@ -1,4 +1,8 @@
 @media screen and (max-width: 420px) {
+    .main_wrapper .entry-title{font-size: 26px;}
+    .excellent_about__h3{font-size: 22px;}
+    .excellent_about__p{font-size: 16px;}
+    .excellent__about__slider-title{font-size: 22px;}
     .excellent__about__party-slider{
         display: block;
     }
@@ -7,6 +11,20 @@
 
         .excellent_about__party-item {
             max-width: 100%;
+            h3{font-size: 18px;}
+            p{font-size: 16px;}
         }
+    }
+    .swiper-container{
+        height: 160px;
+    }
+    .excellent__about__slider-title{
+        margin-bottom: 20px;
+    }
+    .excellent__about__party-title.section_title{
+        margin-top: 50px;
+    }
+    .party__slider-item3{
+        margin-bottom: 20px;
     }
 }

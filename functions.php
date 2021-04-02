@@ -10,7 +10,7 @@
 
 if (!defined('_S_VERSION')) {
     // Replace the version number of the theme on each release.
-    define('_S_VERSION', '1.2.3');
+    define('_S_VERSION', '1.2.9');
 }
 
 if (!function_exists('optika_setup')) :
@@ -164,6 +164,7 @@ function optika_scripts()
     wp_enqueue_style('optika-style_main', get_template_directory_uri() . '/assets/css/main.css', array(), _S_VERSION);
     wp_enqueue_style('optika-style_footer', get_template_directory_uri() . '/assets/css/footer.css', array(), _S_VERSION);
     wp_enqueue_style('optika-mobile-front', get_template_directory_uri() . '/assets/css/mobile-front.css', array(), _S_VERSION);
+    wp_enqueue_style('optika-mobile-brand-types', get_template_directory_uri() . '/assets/css/mobile-brand-types.css', array(), _S_VERSION);
     wp_enqueue_style('swiper', get_template_directory_uri() . '/assets/js/swiper.min.css', array(), _S_VERSION);/*библиотека слайдера*/
     wp_style_add_data('optika-style', 'rtl', 'replace');
     // страница контакты
@@ -188,8 +189,6 @@ function optika_scripts()
         wp_enqueue_style('optika-mobile-card-no-card', get_template_directory_uri() . '/assets/css/mobile-card-no-card.css', array(), _S_VERSION);
     }
 
-    // echo get_the_ID();
-    
     // отменяем зарегистрированный jQuery
     wp_deregister_script( 'jquery-core' );
 	wp_register_script( 'jquery-core', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');

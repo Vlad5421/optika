@@ -35,7 +35,9 @@
     word-wrap: break-word;
   }
   .sun_item .linz_item_order {
-    padding: 5px 10px;
-    font-size: 12px;
+    display: block;
+    padding: 5px;
+    font-size: 10px;
+    width: 100%;
   }
 }

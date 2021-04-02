@@ -45,10 +45,13 @@
     }
     .section_title {
         font-size: 22px;
-        margin: 0px 30px 25px 0;
+        margin: 0 30px 0 0;
     }
     .swiper-container {
         width: 100%;
+    }
+    .frame{
+        align-items: center;
     }
 
     .mobile-head {
@@ -98,6 +101,7 @@
         .header_tel_nunber {
             font-size: 15px;
             line-height: 20px;
+            padding-left: 0;
         }
         .mob-menu-wrap {
             position: fixed;
@@ -193,10 +197,11 @@
     }
     .main_offer_aside{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         width: 100%;
 
-        a {
+        .main_offer_aside__item {
             min-width: 49%;
             max-width: 49%;
         }
@@ -210,13 +215,13 @@
             background-size: cover;
         }
         .main_offer_aside_title {
-            font-size: 17px;
+            font-size: 14px;
             margin-bottom: 5px;
+            height: 65px;
         }
-        .main_offer_aside_desc {
-            font-size: 12px;
-            line-height: 1.1em;
-            margin: 0;
+        .img_aside {
+            margin-bottom: 15px;
+            height: 110px;
         }
     }
     .advantages {
@@ -413,11 +418,46 @@
         .footer_end_link,
         .header_item_img {
             display: block;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 10px;
         }
         .header_item_img {
             margin: 0 auto;
         }
     }
 
-    
+    .wrapper_single__news {
+        .entry-header{
+            font-size: 16px;
+        }
+        .new-content__wrap{
+            padding: 10px;
+
+            .post-thumbnail{
+                width: 100%;
+                height: auto;
+
+                .attachment-post-thumbnail{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .post-text-content{
+                font-size: 14px;
+                img{
+                    height: auto;
+                }
+            }
+        }
+        .navigation.post-navigation .nav-links {
+            line-height: 1.2;
+            margin: 20px 0;
+        
+            .nav-previous, .nav-next {
+                font-size: 14px;
+                max-width: 48%;
+            }
+        }
+    }
 }

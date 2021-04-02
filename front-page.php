@@ -1,4 +1,15 @@
-<?php get_header(); ?>
+<?php
+$duble_sale = get_posts( array(
+            'numberposts' => 2,
+            'category_name'    => 'sale',
+            'orderby'     => 'date',
+            'order'       => 'DESC',
+            'post_type'   => 'post',
+        ) );
+
+
+get_header(); 
+?>
    <main>
         <section class="main_wave">
             <div class="fixed-container"">
@@ -18,23 +29,23 @@
                                 <a href="/shop">контактные линзы</a>
                         </div>
                     </div>
-
                     <aside class="main_offer_aside">
-                        <a href="">
-                            <div class="main_offer_aside_first">
-                                <h2 class="main_offer_aside_title">Новинка!</h2>
-                                <p class="main_offer_aside_desc">Premio – это силикон-гидрогелевые<br> контактные линзы (Япония)</p>
-                            </div>
+                        <?php
+                        $i = 'first';
+                        foreach( $duble_sale as $d_sale ){
+                                setup_postdata($d_sale);
+                        ?>
+                        <a href="<?= the_permalink($d_sale)?>" class="main_offer_aside__item <?= $i ?>">
+                                <h2 class="main_offer_aside_title"><?= $d_sale->post_title ?></h2>
+                                <div class="img_aside">
+                                    <?= get_the_post_thumbnail( $d_sale->ID, 'medium', ['class' => 'main_offer_aside__img'] ); ?>
+                                </div>
                         </a>
-
-                        <a href="">
-                            <div class="main_offer_aside_second">
-                                <h2 class="main_offer_aside_title">Акция!</h2>
-                                <p class="main_offer_aside_desc">Скидка на все линзы Nikon с Transitions<br> GEN8 в период с 15 февраля по 31 мая<br> 2021 года.</p>
-                            </div>
-                        </a>
+                        <?php
+                            $i='second';
+                            }
+                        ?>
                     </aside>
-
                 </div>
             </div>
         </section>
