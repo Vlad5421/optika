@@ -210,6 +210,7 @@
     box-shadow: 0px 4px 25px rgb(44 157 235 / 20%);
     border-radius: 3px;
     width: 341.25px; margin-right: 25px;
+    position: relative;
 }
 
 .frame_item_img {
@@ -222,11 +223,19 @@
 .illustrations {
     margin-bottom: 74px;
     justify-content: space-between;
+    img{
+        max-width: 70%;
+        height: fit-content;
+        &.no-mobile{
+            width: 28%;
+            height: fit-content;
+        }
+    }
 }
 
 .preview_title {
     padding-left: 40px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 5px;
     max-width: 256px;
     text-align: left;
@@ -236,6 +245,11 @@
     padding-left: 40px;
     text-align: left;
     font-family: "Nunito";
+    margin-top: 25px;
+    font-size: 29px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
 }
 
 .preview_price_item {
@@ -445,22 +459,22 @@
    font-weight: 700;
 }
 
-.linz_brand {
-    margin: 0;
-    margin-bottom: 30px;
-    width: 1022px;
-    padding: 0;
-}
+// .linz_brand {
+//     margin: 0;
+//     margin-bottom: 30px;
+//     width: 1022px;
+//     padding: 0;
+// }
 
-.linz_brand_item { 
-    width: 170px;
-    height: 112px;
-    display: table-cell;
-    vertical-align: middle;  
-    text-align: center;
-    border: 1px solid #CFCFCF;
-    box-sizing: border-box;
-}
+// .linz_brand_item { 
+//     width: 170px;
+//     height: 112px;
+//     display: table-cell;
+//     vertical-align: middle;  
+//     text-align: center;
+//     border: 1px solid #CFCFCF;
+//     box-sizing: border-box;
+// }
 
 
 .linz_sortirovat {
@@ -1404,7 +1418,6 @@ input[type=number] {
 .swiper-container1 {
     position: relative;
     width: 1440px;
-    /*height: 379px;*/
     overflow: hidden;
     
 }
@@ -1429,7 +1442,9 @@ input[type=number] {
     color: rgb(29, 26, 26);
     font-size: 16px;
 }
-
+.swiper-container .card{
+    padding-right: 0;
+}
 
 
 .frame_item {
@@ -1658,4 +1673,101 @@ input[type=number] {
 .brands-items :last-child {
     margin-top: -20px;
     padding-left: 40px;
+}
+.filter_with_label{
+    .bapf_body {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            label {
+                width: 170px;
+                height: 112px;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                border: 1px solid #CFCFCF;
+                box-sizing: border-box;
+                margin: 0;
+                .bapf_img_span{
+                    border: none;
+                    width: 150px;
+                    height: 92px;
+                    background-size: auto!important;
+                }
+            }
+        }
+    }
+    .bapf_head{display: none;}
+    .bapf_ckbox{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .fixed-container{
+        width: 1200px;
+    }
+    .header_whitebar{
+        .header_tel{
+            align-items: flex-end;
+            span{
+                display: block;
+                line-height: 1;
+                // vertical-align: bottom;
+            }
+            .header_tel_cod{
+                font-size: 25px;
+            }
+            .header_tel_nunber{
+                padding-left: 5px;
+            }
+        }
+    }
+    .main_offer{
+        padding-top: 105px;
+        .main_offer_picture{
+            width: 819px;
+            padding-left: 55px;
+            padding-top: 56px;
+            padding-right: 420px;
+            background-size: cover;
+            background-position: bottom;
+        }
+        .main_offer_brands {
+            margin-bottom: 66px;
+            margin-top: 72px;
+        }
+    }
+    .swiper-container{
+        width: 1200px;
+        .advantages_item_img {
+            margin-right: 15px;
+            width: 60px;
+            height: 59px;
+        }
+    }
+    .frames {
+        margin-top: 50px;
+        .swiper-container1{
+            width: 1200px;
+        }
+        .slider-start2{
+            padding-left: 12px;
+        }
+        .frame_item_look{
+            width: 282px;
+        }
+    }
+    .full-image{
+        .illustrations{
+            margin-bottom: 0;
+            img {
+                max-width: 70%;
+                &.no-mobile{
+
+                }
+            }
+
+        }
+    }
 }

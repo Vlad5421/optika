@@ -38,7 +38,7 @@ get_header();
                         <a href="<?= the_permalink($d_sale)?>" class="main_offer_aside__item <?= $i ?>">
                                 <h2 class="main_offer_aside_title"><?= $d_sale->post_title ?></h2>
                                 <div class="img_aside">
-                                    <?= get_the_post_thumbnail( $d_sale->ID, 'medium', ['class' => 'main_offer_aside__img'] ); ?>
+                                <img src="<? the_field('img_sale', $d_sale->ID) ?>" alt="АКЦИЯ" class="main_offer_aside__img">
                                 </div>
                         </a>
                         <?php
@@ -313,7 +313,7 @@ get_header();
                             </li>
     
                             <li class="contact_item_adress">
-                                Наш адрес: г. Новороссийск, проспект Дзержинского 211/2, ТЦ Перекресток, 1 этаж
+                                <a href="/contacts#to-map">Наш адрес: г. Новороссийск, проспект Дзержинского 211/2, ТЦ Перекресток, 1 этаж</a>
                             </li>
     
                             <li class="contact_item_tel">

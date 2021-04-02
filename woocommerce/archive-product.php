@@ -36,14 +36,9 @@ do_action( 'optika_woocommerce_breadcrumb' );
             ?>
         
             <div class="linz_page_item">
-                <ul class="linz_brand flex">
-                    <li class="linz_brand_item"><img src="<?php echo get_template_directory_uri() ?>/assets/img/linz_brand1.png" alt="линзы"></li>
-                    <li class="linz_brand_item"><img src="<?php echo get_template_directory_uri() ?>/assets/img/linz_brand2.png" alt="линзы"></li>
-                    <li class="linz_brand_item"><img src="<?php echo get_template_directory_uri() ?>/assets/img/linz_brand3.png" alt="линзы"></li>
-                    <li class="linz_brand_item"><img src="<?php echo get_template_directory_uri() ?>/assets/img/linz_brand4.png" alt="линзы"></li>
-                    <li class="linz_brand_item"><img src="<?php echo get_template_directory_uri() ?>/assets/img/linz_brand5.png" alt="линзы"></li>
-                    <li class="linz_brand_item"><img src="<?php echo get_template_directory_uri() ?>/assets/img/linz_brand6.png" alt="линзы"></li>
-                </ul>
+                <div class="filter_with_label">
+                    <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                </div>
     
     <?php
     /**

@@ -26,10 +26,16 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <aside id="secondary" class="widget-area linz_page_filter">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	<?php
+		dynamic_sidebar( 'sidebar-1' );
+	?>
 </aside><!-- #secondary -->
-
+<!-- <aside id="bee" class="widget-area label-filter">
+	<?php
+		// dynamic_sidebar( 'sidebar-2' );
+	?>
+</aside>#secondary -->
 <?php
-// get_sidebar( 'shop' );
+// get_sidebar( 'WLable' );
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

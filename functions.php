@@ -10,7 +10,7 @@
 
 if (!defined('_S_VERSION')) {
     // Replace the version number of the theme on each release.
-    define('_S_VERSION', '1.2.9');
+    define('_S_VERSION', '1.3');
 }
 
 if (!function_exists('optika_setup')) :
@@ -138,6 +138,19 @@ function optika_widgets_init()
             'after_title' => '</h2>',
         )
     );
+    register_sidebar(
+        array(
+            'name' => esc_html__('FilterWithLabel', 'optika'),
+            'id' => 'sidebar-2',
+            'description' => esc_html__('Add widgets here.', 'optika'),
+            'before_widget' => '<section id="%1$s" class="widget %2$s">',
+            'after_widget' => '</section>',
+            'before_title' => '<h2 class="WLable-title">',
+            'after_title' => '</h2>',
+        )
+    );
+
+
     register_sidebar(
         array(
             'name' => esc_html__('Widget_catalog', 'optika'),
