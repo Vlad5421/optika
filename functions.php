@@ -223,7 +223,7 @@ function optika_scripts()
         wp_enqueue_script('updn-quantitu', get_template_directory_uri() . '/assets/js/updn-quantitu.js', false, null, true);
     }
     if (is_product()) {
-        wp_enqueue_style('optika-mobile-card', get_template_directory_uri() . '/assets/css/mobile-card.css', array(), _S_VERSION);
+        wp_enqueue_style('optika-card', get_template_directory_uri() . '/assets/css/card.css', array(), _S_VERSION);
         wp_enqueue_script('optika-mobCard', get_template_directory_uri() . '/assets/js/mobCard.js', false, null, true);
     }
     if (is_cart()) {
