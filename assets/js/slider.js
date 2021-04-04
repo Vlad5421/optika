@@ -2,7 +2,7 @@ const slider = document.querySelector('.swiper-container');
 const slider1 = document.querySelector('.swiper-container1');
 const slider2 = document.querySelector('.swiper-container2');
 
-if (document.documentElement.clientWidth > 420) {
+if (document.documentElement.clientWidth > 449) {
     let mySwiper = new Swiper(slider, {
         slidesPerView: 4,
         spaceBetween: 10,
@@ -45,7 +45,7 @@ if (document.documentElement.clientWidth > 420) {
         },
     });
 }
-if (document.documentElement.clientWidth < 420) {
+if (document.documentElement.clientWidth < 450) {
     let mySwiper = new Swiper(slider, {
         slidesPerView: 3,
         spaceBetween: 10,

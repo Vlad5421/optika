@@ -37,8 +37,15 @@ do_action( 'optika_woocommerce_breadcrumb' );
         <li class="sun_item">
             
                     <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>" class="linz_item_img" alt="<?= get_the_title() ?>"></a>
-                    <h3 class="sun_item_title"><?php the_title(); ?><br><br>от <?php the_field('cena'); ?> руб.</h3><br>
-                    <?php //the_excerpt(); ?>
+                    <h3 class="sun_item_title"><?php the_title(); ?><br>от <?php the_field('cena'); ?> руб.</h3><br>
+                    <p>
+                        <?php
+                            $cit = explode(" ", get_the_excerpt(), 11);
+                            array_pop($cit);
+                            $cit = implode(" ", $cit);
+                            echo $cit;
+                        ?>
+                    </p>
                     <a href="<?php the_permalink(); ?>" class="linz_item_order" aria-label="заказать">читать дальше...</a>
         </li>
 

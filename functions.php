@@ -151,17 +151,17 @@ function optika_widgets_init()
     );
 
 
-    register_sidebar(
-        array(
-            'name' => esc_html__('Widget_catalog', 'optika'),
-            'id' => 'widget_catalog',
-            'description' => esc_html__('Add widgets here.', 'optika'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget' => '</div>',
-            'before_title' => '<h2 class="widget-title">',
-            'after_title' => '</h2>',
-        )
-    );
+    // register_sidebar(
+    //     array(
+    //         'name' => esc_html__('Widget_catalog', 'optika'),
+    //         'id' => 'widget_catalog',
+    //         'description' => esc_html__('Add widgets here.', 'optika'),
+    //         'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    //         'after_widget' => '</div>',
+    //         'before_title' => '<h2 class="widget-title">',
+    //         'after_title' => '</h2>',
+    //     )
+    // );
 }
 
 add_action('widgets_init', 'optika_widgets_init');
@@ -196,6 +196,7 @@ function optika_scripts()
         wp_enqueue_style('optika-mobile-about', get_template_directory_uri() . '/assets/css/mobile-about.css', array(), _S_VERSION);
     }
     if (get_page_template_slug() == 'page-shop-no-shop.php') {
+        wp_enqueue_style('optika-shop-no-shop', get_template_directory_uri() . '/assets/css/shop-no-shop.css', array(), _S_VERSION);
         wp_enqueue_style('optika-mobile-shop-no-shop', get_template_directory_uri() . '/assets/css/mobile-shop-no-shop.css', array(), _S_VERSION);
     }
     if (is_single() && in_category(['sunglasses', 'accessories', 'frames_and_brands'])) {
@@ -214,6 +215,7 @@ function optika_scripts()
 
     // Для страницы SHOP
     if ( is_shop() ) {
+        wp_enqueue_style('optika-shop', get_template_directory_uri() . '/assets/css/shop.css', array(), _S_VERSION);
         wp_enqueue_style('optika-mobile-shop', get_template_directory_uri() . '/assets/css/mobile-shop.css', array(), _S_VERSION);
         wp_enqueue_script('mobShop', get_template_directory_uri() . '/assets/js/mobShop.js', array(), _S_VERSION, true);
     }

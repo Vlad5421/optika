@@ -1,4 +1,4 @@
-if (document.documentElement.clientWidth < 420) {
+if (document.documentElement.clientWidth < 600) {
 
     const filterWidget = document.querySelector('.widget-area')
     const sortirovka = document.querySelector('.linz_sortirovat')

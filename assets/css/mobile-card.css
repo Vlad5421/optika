@@ -1,4 +1,4 @@
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
   .single_page_flex {
     flex-direction: column;
   }

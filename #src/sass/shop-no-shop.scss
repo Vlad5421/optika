@@ -1,0 +1,136 @@
+/*солнцезащитные очки*/
+
+.sun_img {
+    margin-bottom: 70px;
+    min-width: 100%;
+}
+
+.sun_page_flex {
+    justify-content: space-between;    
+}
+
+.sun_page_flex_text {
+    width: 686px;
+    font-size: 25px;
+    line-height: 28px;
+}
+
+.sun_text_strong{
+    padding: 40px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+.sun_text_strong_link {
+    color: #1584D6;    
+}
+
+.sun_item {
+    
+}
+
+.sun_item_desc {
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: left;
+}
+.sun_item p {
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: left;
+}
+
+.sun_item_title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Nunito";
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+.display-from-mob {
+    display: none;
+}
+
+.column {
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+.sun_page_flex_text {
+    width: auto!important;
+}
+.sun_item {
+    position: relative;
+    height: auto;
+    display: block;
+    margin-bottom: 25px;
+    width: 302px;
+    padding: 0 20px 60px;
+    text-align: center;
+    box-shadow: 0px 4px 25px rgba(44, 157, 235, 0.2);
+    border-radius: 3px;
+    
+    .linz_item_order {
+        position: absolute;
+        bottom: 15px;
+        left: 34px;
+        // margin: 0 auto;
+        display: block;
+        width: 75%;
+        // padding: 0px 40px;
+        font-size: 14px;
+        line-height: 2.5;
+        text-transform: uppercase;
+        background-color: #1584D6;
+        border-radius: 100px;
+        border: none;
+        color: #ffffff;
+    }
+}
+
+// .post .entry-content {
+//     display: flex;
+//     margin-bottom: 50px;
+// }
+// .post .entry-content .sunglasses__slider-new {
+//     margin-right: 58px;
+
+// }
+
+// .bapf_sfilter .bapf_colaps_smb {
+//     color: #525252;
+//     font-size: 12px;
+// }
+// .bapf_body > ul {
+//     padding-left: 0;
+//     color: #5f5f5f;
+//     font-size: 20px;
+//     line-height: 35px;
+// }
+// .bapf_ckbox {
+//     margin-top: 50px;
+// }
+
+@media screen and (max-width: 1445px){
+    .sun_text_strong{
+        font-size: 18px;
+    }
+    .column{
+        font-size: 16px;
+    }
+    .sun_item{
+        width: 275px;
+
+    }
+}
