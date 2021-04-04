@@ -106,3 +106,47 @@
     width: 275px;
   }
 }
+@media screen and (max-width: 600px) {
+  .main_page {
+    padding-top: 20px;
+  }
+
+  .sun_img {
+    margin-bottom: 25px;
+  }
+
+  .section_title {
+    margin: 0;
+  }
+
+  .column {
+    font-size: 16px;
+  }
+
+  .sun_text_strong {
+    padding: 0 10px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 65px;
+  }
+
+  .sun_item {
+    width: 47%;
+    padding: 0 10px 50px;
+  }
+  .sun_item .sun_item_title {
+    font-size: 14px;
+  }
+  .sun_item p {
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+  .sun_item .linz_item_order {
+    display: block;
+    padding: 5px;
+    font-size: 10px;
+    width: 100%;
+  }
+}

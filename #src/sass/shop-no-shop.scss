@@ -99,29 +99,6 @@
     }
 }
 
-// .post .entry-content {
-//     display: flex;
-//     margin-bottom: 50px;
-// }
-// .post .entry-content .sunglasses__slider-new {
-//     margin-right: 58px;
-
-// }
-
-// .bapf_sfilter .bapf_colaps_smb {
-//     color: #525252;
-//     font-size: 12px;
-// }
-// .bapf_body > ul {
-//     padding-left: 0;
-//     color: #5f5f5f;
-//     font-size: 20px;
-//     line-height: 35px;
-// }
-// .bapf_ckbox {
-//     margin-top: 50px;
-// }
-
 @media screen and (max-width: 1445px){
     .sun_text_strong{
         font-size: 18px;
@@ -134,3 +111,38 @@
 
     }
 }
+
+@media screen and (max-width: 600px){
+    .main_page{padding-top: 20px;}
+    .sun_img{margin-bottom: 25px;}
+    .section_title{margin: 0;}
+    .column{font-size: 16px;}
+    .sun_text_strong{
+        padding: 0 10px;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.6;
+        margin-bottom: 65px;
+    }
+    .sun_item{
+        width: 47%;
+        padding: 0 10px 50px;
+
+        .sun_item_title{
+            font-size: 14px;
+
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+        .linz_item_order {
+            display: block;
+            padding: 5px;
+            font-size: 10px;
+            width: 100%;
+        }
+    }
+}
+

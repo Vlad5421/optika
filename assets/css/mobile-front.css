@@ -155,8 +155,7 @@
     flex-direction: column;
     align-items: center;
   }
-
-  .main_offer_picture {
+  .main_offer .main_offer_picture {
     padding-left: 12px;
     padding-top: 28px;
     padding-right: unset;
@@ -168,29 +167,29 @@
     background-size: cover;
     height: unset;
   }
-  .main_offer_picture .main_offer_title {
+  .main_offer .main_offer_picture .main_offer_title {
     font-size: 20px;
     line-height: 112.9%;
     margin-bottom: 5px;
   }
-  .main_offer_picture .main_offer_subtitle {
+  .main_offer .main_offer_picture .main_offer_subtitle {
     font-size: 12px;
     line-height: 112.9%;
     margin-bottom: 14px;
   }
-  .main_offer_picture .main_offer_brands {
+  .main_offer .main_offer_picture .main_offer_brands {
     width: 35%;
     justify-content: space-between;
   }
-  .main_offer_picture .main_offer_brands img {
+  .main_offer .main_offer_picture .main_offer_brands img {
     width: 45%;
   }
-  .main_offer_picture .offer_brands_brand1, .main_offer_picture .offer_brands_brand2, .main_offer_picture .offer_brands_brand3 {
+  .main_offer .main_offer_picture .offer_brands_brand1, .main_offer .main_offer_picture .offer_brands_brand2, .main_offer .main_offer_picture .offer_brands_brand3 {
     width: unset;
     height: unset;
     max-width: 31%;
   }
-  .main_offer_picture .main_offer_link {
+  .main_offer .main_offer_picture .main_offer_link {
     padding: 10px 20px 10px 10px;
     font-size: 10px;
     line-height: 1em;
@@ -308,6 +307,7 @@
   }
   .service_slider_desc {
     margin-right: 0;
+    font-size: 14px;
   }
   .service_numbers {
     width: 100%;
@@ -460,15 +460,5 @@
   .wrapper_single__news .navigation.post-navigation .nav-links .nav-previous, .wrapper_single__news .navigation.post-navigation .nav-links .nav-next {
     font-size: 14px;
     max-width: 48%;
-  }
-
-  .filter_with_label .bapf_body ul label {
-    width: 100px;
-    height: 70px;
-  }
-  .filter_with_label .bapf_body ul label .bapf_img_span {
-    width: 90px;
-    height: 60px;
-    background-size: cover !important;
   }
 }

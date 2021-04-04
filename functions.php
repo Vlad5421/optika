@@ -216,7 +216,7 @@ function optika_scripts()
     // Для страницы SHOP
     if ( is_shop() ) {
         wp_enqueue_style('optika-shop', get_template_directory_uri() . '/assets/css/shop.css', array(), _S_VERSION);
-        wp_enqueue_style('optika-mobile-shop', get_template_directory_uri() . '/assets/css/mobile-shop.css', array(), _S_VERSION);
+        // wp_enqueue_style('optika-mobile-shop', get_template_directory_uri() . '/assets/css/mobile-shop.css', array(), _S_VERSION);
         wp_enqueue_script('mobShop', get_template_directory_uri() . '/assets/js/mobShop.js', array(), _S_VERSION, true);
     }
     if (is_cart() || is_product()) {

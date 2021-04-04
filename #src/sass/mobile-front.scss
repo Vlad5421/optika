@@ -147,53 +147,53 @@
         padding-top: 71px;
         flex-direction: column;
         align-items: center;
-    }
-    .main_offer_picture {
-        padding-left: 12px;
-        padding-top: 28px;
-        padding-right: unset;
-        margin-right: unset;
-        margin-bottom: 13px;
-        width: 100%;
-        background-image: url(../img/ofer1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: unset;
-
-        .main_offer_title {
-            font-size: 20px;
-            line-height: 112.9%;
-            margin-bottom: 5px;
-        }
-        .main_offer_subtitle {
-            font-size: 12px;
-            line-height: 112.9%;
-            margin-bottom: 14px;
-        }
-        .main_offer_brands {
-            width: 35%;
-            justify-content: space-between;
-            
-
-            img {
-                width: 45%;
-            }
-        }
-        .offer_brands_brand1, .offer_brands_brand2, .offer_brands_brand3 {
-            width: unset;
+        .main_offer_picture {
+            padding-left: 12px;
+            padding-top: 28px;
+            padding-right: unset;
+            margin-right: unset;
+            margin-bottom: 13px;
+            width: 100%;
+            background-image: url(../img/ofer1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
             height: unset;
-            max-width: 31%;
+    
+            .main_offer_title {
+                font-size: 20px;
+                line-height: 112.9%;
+                margin-bottom: 5px;
+            }
+            .main_offer_subtitle {
+                font-size: 12px;
+                line-height: 112.9%;
+                margin-bottom: 14px;
+            }
+            .main_offer_brands {
+                width: 35%;
+                justify-content: space-between;
+                
+    
+                img {
+                    width: 45%;
+                }
+            }
+            .offer_brands_brand1, .offer_brands_brand2, .offer_brands_brand3 {
+                width: unset;
+                height: unset;
+                max-width: 31%;
+            }
+            .main_offer_link {
+                padding: 10px 20px 10px 10px;
+                font-size: 10px;
+                line-height: 1em;
+                width: 165px;
+                background-size: contain;
+                background-position: center right 10px;
+                margin-bottom: 10px;
+            }
+            
         }
-        .main_offer_link {
-            padding: 10px 20px 10px 10px;
-            font-size: 10px;
-            line-height: 1em;
-            width: 165px;
-            background-size: contain;
-            background-position: center right 10px;
-            margin-bottom: 10px;
-        }
-        
     }
     .main_offer_aside{
         display: flex;
@@ -308,6 +308,7 @@
         }
         &_slider_desc {
             margin-right: 0;
+            font-size: 14px;
         }
         &_numbers {
             width: 100%;
@@ -464,19 +465,5 @@
             }
         }
     }
-    .filter_with_label{
-        .bapf_body {
-            ul {
-                label {
-                    width: 100px;
-                    height: 70px;
-                    .bapf_img_span{
-                        width: 90px;
-                        height: 60px;
-                        background-size: cover!important;
-                    }
-                }
-            }
-        }
-    }
+    
 }

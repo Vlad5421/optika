@@ -1575,4 +1575,8 @@ input[type=number] {
   .contacts-main .contact .contact_content .contact_list {
     font-size: 18px;
   }
+
+  .breadcrumbs {
+    padding-top: 62px;
+  }
 }
