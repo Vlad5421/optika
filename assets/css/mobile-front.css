@@ -15,6 +15,7 @@
 @media screen and (max-width: 600px) {
   .breadcrumbs {
     padding-top: 50px;
+    width: 100%;
   }
   .breadcrumbs .breadcrumbs_item {
     font-size: 11px;
@@ -178,8 +179,10 @@
     margin-bottom: 14px;
   }
   .main_offer .main_offer_picture .main_offer_brands {
-    width: 35%;
+    width: 51%;
     justify-content: space-between;
+    margin-bottom: 24px;
+    margin-top: 25px;
   }
   .main_offer .main_offer_picture .main_offer_brands img {
     width: 45%;
@@ -224,7 +227,11 @@
   }
   .main_offer_aside .img_aside {
     margin-bottom: 15px;
-    height: 110px;
+    height: auto;
+  }
+  .main_offer_aside .main_offer_aside__img {
+    width: 100%;
+    height: auto;
   }
 
   .advantages .advantages_item {
@@ -248,18 +255,21 @@
   }
   .frames .swiper-wrapper {
     padding-left: 0;
-    height: 334px;
+    height: auto;
     margin-bottom: 30px;
   }
   .frames .swiper-slide.frame_item {
     margin: 0;
-    box-shadow: unset;
     box-sizing: border-box;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     box-shadow: 0px 2px 5px rgba(44, 157, 235, 0.2);
-    height: 285px;
+    height: unset;
   }
-  .frames .frame_item_img {
+  .frames .swiper-slide.frame_item a {
+    display: block;
+  }
+  .frames .swiper-slide.frame_item a .frame_item_img {
+    display: block;
     width: 100%;
     height: auto;
   }
@@ -272,21 +282,23 @@
     font-size: 20px;
   }
   .frames .preview_price {
+    display: inline-block;
     padding-left: 0;
     text-align: center;
     margin: 0 auto;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
     font-size: 23px;
-    bottom: 18px;
-    left: 5px;
+    bottom: 17px;
+    left: 0px;
   }
   .frames .slaider-header {
     margin-bottom: 25px;
   }
 
-  .full-image .no-mobile {
+  .full-image .wooman_for_mobile {
+    display: block;
+  }
+  .full-image .wooman_for_pc {
     display: none;
   }
 
@@ -348,6 +360,9 @@
     background-color: #Fff;
     padding-top: 185px;
   }
+  .news_index .section_title {
+    margin-bottom: 20px;
+  }
   .news_index .service_link {
     display: none;
   }
@@ -358,7 +373,7 @@
     min-width: 48%;
     max-width: 48%;
     padding-top: 0;
-    height: 330px;
+    height: unset;
     padding-bottom: unset;
     margin-bottom: 15px;
   }
@@ -376,8 +391,8 @@
     display: block;
   }
   .news_index .news_item_img {
-    width: 183px;
-    height: 153px;
+    width: 100%;
+    height: auto;
   }
   .news_index .news_item_title {
     font-size: 14px;
@@ -394,11 +409,14 @@
   .contacts-main .contact {
     padding-top: 0;
   }
+  .contacts-main .contact .contact_content {
+    padding-left: 0;
+  }
+  .contacts-main .contact .contact_content .section_title {
+    font-size: 20px;
+  }
   .contacts-main img {
     display: none;
-  }
-  .contacts-main .contact_content {
-    padding-left: 0;
   }
   .contacts-main .fixed-container {
     background-image: url(../img/contacts-bg.svg);
@@ -412,7 +430,7 @@
 .contacts-main .contact_item_tel,
 .contacts-main .contact_item_mail {
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .footer_bac {

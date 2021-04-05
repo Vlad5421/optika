@@ -227,6 +227,10 @@
     .wooman_for_pc{
         width: 100%;
     }
+    .wooman_for_mobile{
+        display: none;
+        width: 100%;
+    }
 }
 
 .preview_title {
@@ -656,22 +660,6 @@
     border: none;
     outline: none;
     background: none;
-}
-
-/* Записи - типо товары card-no-card */
-.frames__text-new {
-    padding-left: 30px;
-}
-.no-product__price {
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 112.9%;
-    display: block;
-    margin-bottom: 20px;
-}
-.no-product__price .num {
-    font-size: 50px;
-    display: inline;
 }
 
 /* сингл продукт */
@@ -1150,10 +1138,10 @@ input[type=number] {
     width: 14%;
 }
 
-/* Главная рестилизация */
-.swiper-wrapper {
-    height: auto;
-}
+// /* Главная рестилизация */
+// .swiper-wrapper {
+//     height: auto;
+// }
 
 /* singl-news */
 .single__news {
@@ -1355,6 +1343,12 @@ input[type=number] {
     }
     .breadcrumbs{
         padding-top: 62px;
+        // width: 1200px;
     }
     
+}
+@media screen and (max-width: 1200px) {
+    .breadcrumbs{
+        width: 1200px;
+    }
 }

@@ -84,11 +84,9 @@
     .linz_item_order {
         position: absolute;
         bottom: 15px;
-        left: 34px;
-        // margin: 0 auto;
+        left: 27\px;
         display: block;
         width: 75%;
-        // padding: 0px 40px;
         font-size: 14px;
         line-height: 2.5;
         text-transform: uppercase;
@@ -116,7 +114,8 @@
     .main_page{padding-top: 20px;}
     .sun_img{margin-bottom: 25px;}
     .section_title{margin: 0;}
-    .column{font-size: 16px;}
+    .column{column-count: 1;}
+    .display-from-mob {display: block;}
     .sun_text_strong{
         padding: 0 10px;
         font-size: 18px;
@@ -141,7 +140,7 @@
             display: block;
             padding: 5px;
             font-size: 10px;
-            width: 100%;
+            margin: 0 auto;
         }
     }
 }

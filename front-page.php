@@ -169,7 +169,7 @@ get_header();
             <div class="fixed-container">
                 <h2 class="visually-hidden">Иллюстрация</h2>
                 <div class="illustrations flex">
-                        <!-- <img class="wooman_for_mobile" src="<?php //echo get_template_directory_uri()?>/assets/img/ill1.jpg" alt="optikaeyeline"> -->
+                        <img class="wooman_for_mobile" src="<?php echo get_template_directory_uri()?>/assets/img/ill1.jpg" alt="optikaeyeline">
                         <img class="wooman_for_pc" src="<?php echo get_template_directory_uri()?>/assets/img/slider.png" alt="optikaeyeline">
                 </div>
             </div>

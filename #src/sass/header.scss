@@ -171,9 +171,12 @@ nav li:hover > .submenu {
             padding-left: 5px;
             font-size: 26px;
         }
-    }
-    .header_first{
-        height: 118px;
+        .header_basket_item{
+            line-height: unset;
+        }
+        .header_first{
+            height: 118px;
+        }
     }
     .header_main{
         width: 1200px;

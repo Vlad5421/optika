@@ -170,8 +170,10 @@ nav li:hover > .submenu {
     padding-left: 5px;
     font-size: 26px;
   }
-
-  .header_first {
+  .header_whitebar .header_basket_item {
+    line-height: unset;
+  }
+  .header_whitebar .header_first {
     height: 118px;
   }
 

@@ -81,7 +81,7 @@
 .sun_item .linz_item_order {
   position: absolute;
   bottom: 15px;
-  left: 34px;
+  left: 27px;
   display: block;
   width: 75%;
   font-size: 14px;
@@ -120,7 +120,12 @@
   }
 
   .column {
-    font-size: 16px;
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+
+  .display-from-mob {
+    display: block;
   }
 
   .sun_text_strong {
@@ -147,6 +152,6 @@
     display: block;
     padding: 5px;
     font-size: 10px;
-    width: 100%;
+    margin: 0 auto;
   }
 }

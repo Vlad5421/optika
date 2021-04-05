@@ -1,0 +1,45 @@
+.frames__text-new {
+    padding-left: 30px;
+}
+.no-product__price {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 112.9%;
+    display: block;
+    margin-bottom: 20px;
+}
+.no-product__price .num {
+    font-size: 50px;
+    display: inline;
+}
+
+.entry-content{
+    display: flex;
+}
+.sunglasses__text-new{
+    padding-left: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .post .entry-content {display: block;}
+    .main_page{padding-top: 20px;}
+    .frames__text-new{
+        padding-left: 0;
+        font-size: 16px;
+    }
+    .no-product__price{
+        margin-top: 20px;
+        
+        .num{font-size: 36px;}
+    }
+    .navigation.post-navigation .nav-links {
+        line-height: 1.2;
+        margin: 20px 0;
+    
+        .nav-previous, .nav-next {
+            font-size: 14px;
+            max-width: 48%;
+        }
+    }
+}

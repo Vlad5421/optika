@@ -1,7 +1,3 @@
-if (document.documentElement.clientWidth < 1500) {
-    document.body.classList.add('litle')
-}
-
 if (document.documentElement.clientWidth < 600) {
 
     const burgBtn = document.querySelector('.mob-menu')

@@ -13,7 +13,7 @@
 
     .breadcrumbs {
         padding-top: 50px;
-        // height: 90px;
+        width: 100%;
 
         .breadcrumbs_item {
             font-size: 11px;
@@ -170,9 +170,10 @@
                 margin-bottom: 14px;
             }
             .main_offer_brands {
-                width: 35%;
+                width: 51%;
                 justify-content: space-between;
-                
+                margin-bottom: 24px;
+                margin-top: 25px;
     
                 img {
                     width: 45%;
@@ -221,7 +222,11 @@
         }
         .img_aside {
             margin-bottom: 15px;
-            height: 110px;
+            height: auto;
+        }
+        .main_offer_aside__img{
+            width: 100%;
+            height: auto;
         }
     }
     .advantages {
@@ -247,20 +252,23 @@
         }
         .swiper-wrapper {
             padding-left: 0;
-            height: 334px;
+            height: auto;
             margin-bottom: 30px;
         }
         .swiper-slide.frame_item{
             margin: 0;
-            box-shadow: unset;
             box-sizing: border-box;
-            padding-bottom: 0;
+            padding-bottom: 40px;
             box-shadow: 0px 2px 5px rgba(44, 157, 235, 0.2);
-            height: 285px;
-        }
-        .frame_item_img {
-            width: 100%;
-            height: auto;
+            height: unset;
+            a{
+                display: block;
+                .frame_item_img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
         .preview_title {
             padding-left: 0;
@@ -271,13 +279,14 @@
             font-size: 20px;
         }
         .preview_price {
+            display: inline-block;
             padding-left: 0;
             text-align: center;
             margin: 0 auto;
-            width: fit-content;
+            width: 100%;
             font-size: 23px;
-            bottom: 18px;
-            left: 5px;
+            bottom: 17px;
+            left: 0px;
         
         }
         .slaider-header {
@@ -286,8 +295,10 @@
     }
 
     .full-image {
-
-        .no-mobile {
+        .wooman_for_mobile{
+            display: block;
+        }
+        .wooman_for_pc {
             display: none;
         }
     }
@@ -344,6 +355,9 @@
         }
     }
     .news_index {
+        .section_title{
+            margin-bottom: 20px;
+        }
         background-color: #Fff;
         padding-top: 185px;
 
@@ -357,7 +371,7 @@
             min-width: 48%;
             max-width: 48%;
             padding-top: 0;
-            height: 330px;
+            height: unset;
             padding-bottom: unset;
             margin-bottom: 15px;
         }
@@ -376,8 +390,8 @@
             }
         }
         .news_item_img {
-            width: 183px;
-            height: 153px;
+            width: 100%;
+            height: auto;
         }
         .news_item_title {
             font-size: 14px;
@@ -394,11 +408,14 @@
     .contacts-main {
         .contact {
             padding-top: 0;
+            .contact_content {
+                padding-left: 0;
+                .section_title {
+                    font-size: 20px;
+                }
+            }
         }
         img {display: none;}
-        .contact_content {
-            padding-left: 0;
-        }
         .fixed-container {
             background-image: url(../img/contacts-bg.svg);
             background-repeat: no-repeat;
@@ -411,7 +428,7 @@
         .contact_item_tel,
         .contact_item_mail {
             margin-bottom: 30px;
-            font-size: 20px;
+            font-size: 14px;
         }
     }
     .footer_bac {

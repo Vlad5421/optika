@@ -108,15 +108,20 @@
 }
 
 @media screen and (max-width: 1445px){
-.footer_conteiner {
-    padding-top: 38px;
-    margin-bottom: 17px;
-    font-size: 16px;
+    .footer_conteiner {
+        padding-top: 38px;
+        margin-bottom: 17px;
+        font-size: 16px;
+    }
+    .foter_nav_title{
+        font-size: 20px;
+    }
+    .footer_list{
+        font-size: 16px;
+    }
 }
-.foter_nav_title{
-    font-size: 20px;
-}
-.footer_list{
-    font-size: 16px;
-}
+@media screen and (max-width: 1200px) {
+    .footer_bac {
+        width: 1200px;
+    }
 }

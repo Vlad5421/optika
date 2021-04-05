@@ -186,7 +186,7 @@
     }
     .linz_item_footer {
         position:absolute;
-        width: 242px;
+        // width: 242px;
         left: 40px;
         right:40px;
         bottom: 20px;
@@ -237,6 +237,40 @@
         .value{
             select{
                 font-size: 18px;
+            }
+        }
+    }
+    .linz_item {
+        // width: 48%;
+        padding: 5px;
+        min-height: unset;
+        a{display: block;margin-bottom: 15px;}
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .linz_item_footer {
+            position: relative;
+            left: unset;
+            right: unset;
+            width: auto;
+            padding-bottom: 55px;
+
+            .woocommerce-loop-product__title{
+                font-size: 16px;
+                line-height: 1.5em;
+                height: 4.5em;
+            }
+            .add_to_cart_button {
+                padding: 5px 20px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-bottom: 0;
             }
         }
     }
@@ -347,12 +381,29 @@
 
         .linz_item {
             width: 48%;
-
+            padding: 5px;
+            min-height: unset;
+            a{display: block;}
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+            }
             .linz_item_footer {
+                position: relative;
+                left: unset;
+                right: unset;
                 width: auto;
+
+                .woocommerce-loop-product__title{
+                    font-size: 16px;
+                }
             }
             .add_to_cart_button {
                 padding: 5px 20px;
+                position: absolute;
+                bottom: 0;
             }
         }
     }
