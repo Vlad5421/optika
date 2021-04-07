@@ -236,17 +236,12 @@
   margin-bottom: 74px;
   justify-content: space-between;
 }
-.illustrations img {
-  max-width: 70%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.illustrations .wooman_for_pc {
+  width: 100%;
 }
-.illustrations img.no-mobile {
-  width: 28%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.illustrations .wooman_for_mobile {
+  display: none;
+  width: 100%;
 }
 
 .preview_title {
@@ -443,13 +438,13 @@
 /*внутренние страницы*/
 .breadcrumbs {
   padding-top: 92px;
-  /* height: 134px; */
   background-color: #EDF4FA;
 }
 
 .breadcrumbs_item {
   font-size: 15px;
   color: #727272;
+  padding-bottom: 8px;
 }
 
 .main_page {
@@ -458,386 +453,6 @@
 
 .page_section {
   margin-bottom: 100px;
-}
-
-/*каталог линзы*/
-.linz_page_flex {
-  justify-content: space-between;
-}
-
-.linz_page_item {
-  margin: 0;
-  max-width: 1020px;
-}
-
-.linz_page_filter {
-  padding-top: 40px;
-  width: 344px;
-}
-
-.filter_title {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.linz_sortirovat {
-  justify-content: flex-end;
-  margin-bottom: 40px;
-  font-size: 20px;
-  color: #5F5F5F;
-}
-
-.orderby {
-  border: none;
-  width: 280px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
-  color: #262626;
-}
-
-.linz_list {
-  padding: 0;
-  margin: 10px 0 50px 0;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-
-.linz_item {
-  position: relative;
-  padding: 20px 40px 30px 40px;
-  margin-bottom: 55px;
-  width: auto;
-  min-height: 404px;
-  text-align: center;
-  box-shadow: 0px 4px 25px rgba(44, 157, 235, 0.2);
-  border-radius: 3px;
-}
-
-.linz_item:hover {
-  box-shadow: 0px 4px 50px rgba(0, 149, 255, 0.3);
-}
-
-.woocommerce-loop-product__title {
-  font-family: "Nunito";
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.linz_item img {
-  width: 225px;
-  height: 187px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.linz_item_price {
-  justify-content: space-between;
-  font-family: "Nunito";
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.linz__price_strong {
-  font-family: "Nunito";
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.add_to_cart_button {
-  padding: 10px 40px;
-  font-size: 13px;
-  text-transform: uppercase;
-  background-color: #1584D6;
-  border-radius: 100px;
-  border: none;
-  color: #ffffff;
-}
-
-.add_to_cart_button:hover {
-  background-color: #52a7e4;
-}
-
-.linz_item_footer {
-  position: absolute;
-  width: 242px;
-  left: 40px;
-  right: 40px;
-  bottom: 20px;
-}
-
-.linz-foter-item {
-  margin-bottom: 15px;
-}
-
-.page-numbers {
-  display: flex;
-  padding: 0 20px;
-  margin: 40px 0;
-  justify-content: center;
-  font-size: 17px;
-}
-
-.pagination_antecedent {
-  margin-right: 50px;
-  padding: 10px 40px;
-  border: 1px solid #A9A9A9;
-  border-radius: 100px;
-  color: #5F5F5F;
-}
-
-.pagination_next {
-  margin-left: 50px;
-  padding: 10px 40px;
-  border: 1px solid #A5E5FF;
-  border-radius: 100px;
-  color: #1584D6;
-}
-
-.pagination_number {
-  align-items: center;
-}
-
-.pagination_number_next {
-  margin-left: 10px;
-  padding: 5px 20px;
-  border: 1px solid #A5E5FF;
-  border-radius: 100px;
-  color: #1584D6;
-}
-
-/*солнцезащитные очки*/
-.sun_img {
-  margin-bottom: 70px;
-  min-width: 100%;
-}
-
-.sun_page_flex {
-  justify-content: space-between;
-}
-
-.sun_page_flex_text {
-  width: 686px;
-  font-size: 25px;
-  line-height: 28px;
-}
-
-.sun_text_strong {
-  padding: 40px;
-  text-align: center;
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 1.3em;
-}
-
-.sun_text_strong_link {
-  color: #1584D6;
-}
-
-.sun_item {
-  padding: 15px 20px;
-  width: 302px;
-  height: 385px;
-  text-align: center;
-  box-shadow: 0px 4px 25px rgba(44, 157, 235, 0.2);
-  border-radius: 3px;
-}
-
-.sun_item_desc {
-  margin-top: 0;
-  font-size: 17px;
-  line-height: 23px;
-  text-align: left;
-}
-
-.sun_item p {
-  margin-top: 0;
-  font-size: 17px;
-  line-height: 23px;
-  text-align: left;
-}
-
-.sun_item_title {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-family: "Nunito";
-  font-size: 22px;
-  font-weight: 700;
-  text-align: center;
-}
-
-/*карточка товара*/
-.card_imgsmall {
-  padding-top: 20px;
-  margin-right: 20px;
-  width: 163px;
-  height: 125px;
-  background: rgba(255, 255, 255, 0.49);
-  border-radius: 3px;
-  border: 1px solid #CFCFCF;
-  text-align: center;
-}
-
-.card_imgsmall img {
-  width: 114px;
-  height: 95;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card_img {
-  width: 610px;
-  height: 451px;
-  background: rgba(255, 255, 255, 0.49);
-  border-radius: 3px;
-  border: 1px solid #CFCFCF;
-  text-align: center;
-}
-
-.card_img img {
-  margin: 0 auto;
-  width: 500px;
-  height: 419px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.woocommerce-product-gallery {
-  margin: 0 auto;
-  width: 500px;
-  height: 419px;
-}
-
-.card_title {
-  margin-bottom: 30px;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: left;
-}
-
-.card_info {
-  text-align: left;
-}
-
-.card_options {
-  text-align: left;
-}
-
-.card_options_table {
-  margin-bottom: 30px;
-  /* width: 586px;
-  height: 56px; */
-}
-
-.card_table_item_dis {
-  color: #949494;
-  background: #e6e6e6;
-}
-
-.card_table_item {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 293px;
-  text-align: center;
-  border: 1px solid #CFCFCF;
-  border-radius: 3px 0px 0px 3px;
-}
-
-.reset_variations {
-  margin-left: 30px;
-}
-
-.card_options_title {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.card_options_item {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.label {
-  font-size: 17px;
-  color: #616161;
-  line-height: 19px;
-}
-
-.quantity input {
-  padding: 10px;
-  font-size: 25px;
-  text-align: center;
-  border: 0;
-  width: 2em !important;
-}
-
-.card_options_price {
-  padding-top: 50px;
-  font-size: 25px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.card_options_total {
-  /* padding-top: 10px; */
-  margin-top: 45px;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #D0D0D0;
-}
-
-.card_options_smalltext {
-  color: #aaa;
-  font-size: 12px;
-}
-
-.card_options_total_number {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.rub {
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.card_button {
-  padding: 20px 60px 20px 110px;
-  margin-top: 20px;
-  font-size: 17px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: #1584D6;
-  border-radius: 100px;
-  border: none;
-  background-image: url(../img/basket2.svg);
-  background-repeat: no-repeat;
-  background-position: center left 60px;
-  color: #ffffff;
-}
-
-.card_info {
-  padding-top: 40px;
-  font-size: 17px;
-}
-
-.card_info_item {
-  margin-right: 40px;
-}
-
-.card_info_options1 {
-  margin-right: 20px;
-  color: #616161;
-}
-
-.card_info_options2 {
-  font-weight: 700;
-}
-
-.card_desc {
-  margin-bottom: 136px;
 }
 
 /*типы линз*/
@@ -1048,16 +663,6 @@
   color: #ffffff;
 }
 
-.linz_item_order {
-  padding: 10px 40px;
-  font-size: 13px;
-  text-transform: uppercase;
-  background-color: #1584D6;
-  border-radius: 100px;
-  border: none;
-  color: #ffffff;
-}
-
 /* добавленые стили */
 /* shop-no-shop */
 .orderby {
@@ -1066,79 +671,6 @@
   border: none;
   outline: none;
   background: none;
-}
-
-.display-from-mob {
-  display: none;
-}
-
-.column {
-  -moz-column-width: 200px;
-  column-width: 200px;
-  -moz-column-count: 2;
-  column-count: 2;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-  /* -webkit-column-rule: 1px solid #ccc;
-  -moz-column-rule: 1px solid #ccc;
-  column-rule: 1px solid #ccc; */
-}
-
-.sun_page_flex_text {
-  width: auto !important;
-}
-
-.sun_item {
-  height: auto;
-  display: block;
-  margin-bottom: 25px;
-}
-
-a.linz_item_order {
-  bottom: 0;
-}
-
-.post .entry-content {
-  display: flex;
-  margin-bottom: 50px;
-}
-
-.post .entry-content .sunglasses__slider-new {
-  margin-right: 58px;
-}
-
-.bapf_sfilter .bapf_colaps_smb {
-  color: #525252;
-  font-size: 12px;
-}
-
-.bapf_body > ul {
-  padding-left: 0;
-  color: #5f5f5f;
-  font-size: 20px;
-  line-height: 35px;
-}
-
-.bapf_ckbox {
-  margin-top: 50px;
-}
-
-/* Записи - типо товары card-no-card */
-.frames__text-new {
-  padding-left: 30px;
-}
-
-.no-product__price {
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 112.9%;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.no-product__price .num {
-  font-size: 50px;
-  display: inline;
 }
 
 /* сингл продукт */
@@ -1663,11 +1195,6 @@ input[type=number] {
   width: 14%;
 }
 
-/* Главная рестилизация */
-.swiper-wrapper {
-  height: auto;
-}
-
 /* singl-news */
 .single__news {
   font-family: Nunito;
@@ -1752,8 +1279,8 @@ input[type=number] {
   flex-wrap: wrap;
 }
 .filter_with_label .bapf_body ul label {
-  width: 170px;
-  height: 112px;
+  width: 160px;
+  height: 105px;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -1765,7 +1292,7 @@ input[type=number] {
   border: none;
   width: 150px;
   height: 92px;
-  background-size: auto !important;
+  background-size: contain !important;
 }
 .filter_with_label .bapf_head {
   display: none;
@@ -1774,23 +1301,33 @@ input[type=number] {
   margin-top: 0;
 }
 
-@media screen and (max-width: 1370px) {
-  .fixed-container {
-    width: 1200px;
+.linz_list {
+  padding: 0;
+  margin: 10px 0 50px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 1445px) {
+  body {
+    font-size: 16px;
   }
 
-  .header_whitebar .header_tel {
-    align-items: flex-end;
+  .breadcrumbs_item {
+    font-size: 12px;
   }
-  .header_whitebar .header_tel span {
-    display: block;
-    line-height: 1;
+
+  .main_page {
+    padding-top: 53px;
   }
-  .header_whitebar .header_tel .header_tel_cod {
-    font-size: 25px;
+
+  .section_title {
+    font-size: 28px;
   }
-  .header_whitebar .header_tel .header_tel_nunber {
-    padding-left: 5px;
+
+  .product_meta {
+    font-size: 16px;
   }
 
   .main_offer {
@@ -1818,6 +1355,15 @@ input[type=number] {
     height: 59px;
   }
 
+  .swiper-container2 {
+    width: 1200px;
+  }
+  .swiper-container2 .advantages_item_img {
+    margin-right: 15px;
+    width: 60px;
+    height: 59px;
+  }
+
   .frames {
     margin-top: 50px;
   }
@@ -1834,7 +1380,36 @@ input[type=number] {
   .full-image .illustrations {
     margin-bottom: 0;
   }
-  .full-image .illustrations img {
-    max-width: 70%;
+  .full-image .illustrations .wooman_for_pc {
+    width: 100%;
+  }
+
+  .news_item {
+    padding-top: 0;
+    width: 375px;
+    height: 586px;
+  }
+  .news_item .news_item_img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contacts-main .contact img {
+    max-width: 45%;
+  }
+  .contacts-main .contact .contact_content .section_title {
+    font-size: 30px;
+  }
+  .contacts-main .contact .contact_content .contact_list {
+    font-size: 18px;
+  }
+
+  .breadcrumbs {
+    padding-top: 62px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .breadcrumbs {
+    width: 1200px;
   }
 }

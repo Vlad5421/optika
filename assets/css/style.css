@@ -18,12 +18,18 @@ body {
     font-size: 20px;
     line-height:28px;
     color: #262626;
+    
+
 }
 
 body.modal-activ {
     overflow: hidden;
-} 
-
+}
+/* body.litle{
+    zoom: 0.8;
+    zoom: 80%;
+    -moz-zoom: 80%;
+} */
 img {
     max-width: 100%;
 } 

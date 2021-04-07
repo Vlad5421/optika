@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/*каталог линзы*/
+.linz_page_flex {
+  justify-content: space-between;
+}
+
+.linz_page_item {
+  margin: 0;
+  max-width: 1020px;
+}
+
+.linz_page_filter {
+  padding-top: 40px;
+  width: 344px;
+}
+
+.filter_title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.linz_sortirovat {
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #5F5F5F;
+}
+
+.orderby {
+  border: none;
+  width: 280px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #262626;
+}
+
+.linz_item {
+  position: relative;
+  padding: 20px 40px 30px 40px;
+  margin-bottom: 55px;
+  width: auto;
+  min-height: 404px;
+  text-align: center;
+  box-shadow: 0px 4px 25px rgba(44, 157, 235, 0.2);
+  border-radius: 3px;
+}
+
+.linz_item:hover {
+  box-shadow: 0px 4px 50px rgba(0, 149, 255, 0.3);
+}
+
+.woocommerce-loop-product__title {
+  font-family: "Nunito";
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.linz_item img {
+  width: 225px;
+  height: 187px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.linz_item_price {
+  justify-content: space-between;
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.linz__price_strong {
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.add_to_cart_button {
+  padding: 10px 40px;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #1584D6;
+  border-radius: 100px;
+  border: none;
+  color: #ffffff;
+}
+
+.add_to_cart_button:hover {
+  background-color: #52a7e4;
+}
+
+.linz_item_footer {
+  position: absolute;
+  width: 242px;
+  left: 40px;
+  right: 40px;
+  bottom: 20px;
+}
+
+.linz-foter-item {
+  margin-bottom: 15px;
+}
+
+.page-numbers {
+  display: flex;
+  padding: 0 20px;
+  margin: 40px 0;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.pagination_antecedent {
+  margin-right: 50px;
+  padding: 10px 40px;
+  border: 1px solid #A9A9A9;
+  border-radius: 100px;
+  color: #5F5F5F;
+}
+
+.pagination_next {
+  margin-left: 50px;
+  padding: 10px 40px;
+  border: 1px solid #A5E5FF;
+  border-radius: 100px;
+  color: #1584D6;
+}
+
+.pagination_number {
+  align-items: center;
+}
+
+.pagination_number_next {
+  margin-left: 10px;
+  padding: 5px 20px;
+  border: 1px solid #A5E5FF;
+  border-radius: 100px;
+  color: #1584D6;
+}
+
+@media screen and (max-width: 1445px) {
+  .linz_page_filter {
+    max-width: 20%;
+  }
+
+  .linz_page_item {
+    max-width: 75%;
+  }
+
+  .filter_with_label .bapf_body ul label {
+    width: 140px;
+    height: 100px;
+  }
+  .filter_with_label .bapf_body ul label .bapf_img_span {
+    width: 130px;
+  }
+
+  .orderby {
+    width: 150px;
+  }
+
+  .linz_item {
+    padding: 10px 20px;
+  }
+  .linz_item .linz_item_footer {
+    width: unset;
+    left: 20px;
+    right: 20px;
+  }
+  .linz_item .woocommerce-loop-product__title {
+    font-size: 18px;
+  }
+
+  .bapf_body > ul {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page-numbers.current {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .mobFilterShop {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background: #fff;
+    border-top: 1px solid #D3D3D3;
+    font-size: 18px;
+    line-height: 1.3em;
+    padding: 8px;
+  }
+
+  .linz_page_filter {
+    position: fixed;
+    left: -100%;
+    top: 10px;
+    background-color: #fff;
+    z-index: 601;
+    border: 1px solid #000;
+    padding: 5px 20px;
+    padding-right: 40px;
+    font-size: 12px;
+    max-width: unset;
+    width: 85%;
+    transition: all 0.3s;
+  }
+  .linz_page_filter .bapf_sfilter {
+    margin-bottom: 10px;
+  }
+  .linz_page_filter .bapf_ckbox {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .linz_page_filter .bapf_body > ul {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+  }
+  .linz_page_filter .bapf_body > ul li {
+    max-width: 50%;
+    min-width: 50%;
+    flex-grow: 1;
+    border: 1px solid #f7f7f7;
+  }
+  .linz_page_filter .bapf_head h3 {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .main_page {
+    padding-top: 24px;
+  }
+
+  .linz_page_flex {
+    position: relative;
+  }
+  .linz_page_flex .linz_page_item {
+    max-width: 100%;
+  }
+  .linz_page_flex .linz_page_item .linz_brand {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .linz_page_flex .linz_page_item .linz_brand .linz_brand_item {
+    max-width: 33.3%;
+    min-width: 33.3%;
+    height: 90px;
+    padding: 7px;
+  }
+  .linz_page_flex .linz_page_item .linz_sortirovat {
+    font-size: 14px;
+    justify-content: flex-start;
+  }
+  .linz_page_flex .linz_page_item .linz_sortirovat .orderby {
+    font-size: 14px;
+    width: 170px;
+  }
+  .linz_page_flex .linz_page_item .linz_sortirovat span {
+    display: block;
+  }
+  .linz_page_flex .linz_page_item .linz_item {
+    padding: 0;
+    width: 47%;
+    min-height: 335px;
+  }
+  .linz_page_flex .linz_page_item .linz_item .woocommerce-loop-product__link {
+    display: block;
+  }
+  .linz_page_flex .linz_page_item .linz_item img {
+    width: 100%;
+    height: auto;
+  }
+  .linz_page_flex .linz_page_item .linz_item .linz_item_footer {
+    width: 100%;
+    font-size: 12px;
+    left: 0;
+    right: 0;
+  }
+  .linz_page_flex .linz_page_item .linz_item .linz_item_footer .woocommerce-loop-product__title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .linz_page_flex .linz_page_item .linz_list {
+    margin-bottom: 0;
+  }
+  .linz_page_flex .linz_page_item ul.page-numbers {
+    margin: 0;
+  }
+  .linz_page_flex .linz_page_item ul.page-numbers .pagination_next {
+    margin-left: 0;
+    padding: 5px;
+    color: #1584D6;
+    border: none;
+    font-size: 12px;
+  }
+  .linz_page_flex .linz_page_item ul.page-numbers .pagination_antecedent {
+    margin-right: 0;
+    padding: 5px;
+    border: none;
+    font-size: 12px;
+  }
+  .linz_page_flex .linz_page_item ul.page-numbers a.page-numbers {
+    display: block;
+    padding: 0 5px;
+  }
+
+  .filter_btn {
+    padding: 5px 25px;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: #38CF8A;
+    border-radius: 100px;
+    border: none;
+    color: #ffffff;
+    margin: 0 auto;
+  }
+
+  .filter_with_label .bapf_body ul label {
+    width: 100px;
+    height: 70px;
+  }
+  .filter_with_label .bapf_body ul label .bapf_img_span {
+    width: 90px;
+    height: 60px;
+    background-size: cover !important;
+  }
+}
