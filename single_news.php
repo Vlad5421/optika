@@ -33,7 +33,6 @@ do_action( 'optika_woocommerce_breadcrumb' );
 			endwhile; // End of the loop.
 			?>
 		</div>
-		
 	</main><!-- #main -->
 
 <?php

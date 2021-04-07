@@ -1,5 +1,4 @@
 <?php
-
 /**
  * EYELINE functions and definitions
  *
@@ -10,43 +9,13 @@
 
 if (!defined('_S_VERSION')) {
     // Replace the version number of the theme on each release.
-    define('_S_VERSION', '1.3');
+    define('_S_VERSION', '1.3.7');
 }
-
 if (!function_exists('optika_setup')) :
-    /**
-     * Sets up theme defaults and registers support for various WordPress features.
-     *
-     * Note that this function is hooked into the after_setup_theme hook, which
-     * runs before the init hook. The init hook is too late for some features, such
-     * as indicating support for post thumbnails.
-     */
-    function optika_setup()
-    {
-        /*
-         * Make theme available for translation.
-         * Translations can be filed in the /languages/ directory.
-         * If you're building a theme based on EYELINE, use a find and replace
-         * to change 'eyeline' to the name of your theme in all the template files.
-         */
+    function optika_setup(){
         load_theme_textdomain('eyeline', get_template_directory() . '/languages');
-
-        // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
-
-        /*
-         * Let WordPress manage the document title.
-         * By adding theme support, we declare that this theme does not use a
-         * hard-coded <title> tag in the document head, and expect WordPress to
-         * provide it for us.
-         */
         add_theme_support('title-tag');
-
-        /*
-         * Enable support for Post Thumbnails on posts and pages.
-         *
-         * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-         */
         add_theme_support('post-thumbnails');
 
         // This theme uses wp_nav_menu() in one location.
@@ -87,12 +56,6 @@ if (!function_exists('optika_setup')) :
 
         // Add theme support for selective refresh for widgets.
         add_theme_support('customize-selective-refresh-widgets');
-
-        /**
-         * Add support for core custom logo.
-         *
-         * @link https://codex.wordpress.org/Theme_Logo
-         */
         add_theme_support(
             'custom-logo',
             array(
@@ -106,25 +69,6 @@ if (!function_exists('optika_setup')) :
 endif;
 add_action('after_setup_theme', 'optika_setup');
 
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
-// function eyeline_content_width()
-// {
-//     $GLOBALS['content_width'] = apply_filters('eyeline_content_width', 640);
-// }
-
-// add_action('after_setup_theme', 'eyeline_content_width', 0);
-
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
 function optika_widgets_init()
 {
     register_sidebar(
@@ -149,25 +93,12 @@ function optika_widgets_init()
             'after_title' => '</h2>',
         )
     );
-
-
-    register_sidebar(
-        array(
-            'name' => esc_html__('Widget_catalog', 'optika'),
-            'id' => 'widget_catalog',
-            'description' => esc_html__('Add widgets here.', 'optika'),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget' => '</div>',
-            'before_title' => '<h2 class="widget-title">',
-            'after_title' => '</h2>',
-        )
-    );
 }
 
 add_action('widgets_init', 'optika_widgets_init');
 
 /**
- * Enqueue scripts and styles.
+ * Подключение скриптов и стилей
  */
 function optika_scripts()
 {
@@ -188,7 +119,7 @@ function optika_scripts()
     // страница новости
     if (get_the_ID() == 1215) {
         wp_enqueue_style('optika-style_all-news', get_template_directory_uri() . '/assets/css/all-news.css', array(), _S_VERSION);
-        wp_enqueue_style('optika-mobile-news', get_template_directory_uri() . '/assets/css/mobile-news.css', array(), _S_VERSION);
+        wp_enqueue_script('optika-newsMHItem', get_template_directory_uri() . '/assets/js/newsMakeHeitItem.js', false, null, true);
     }
     // страница о нас
     if (get_the_ID() == 57) {
@@ -196,10 +127,10 @@ function optika_scripts()
         wp_enqueue_style('optika-mobile-about', get_template_directory_uri() . '/assets/css/mobile-about.css', array(), _S_VERSION);
     }
     if (get_page_template_slug() == 'page-shop-no-shop.php') {
-        wp_enqueue_style('optika-mobile-shop-no-shop', get_template_directory_uri() . '/assets/css/mobile-shop-no-shop.css', array(), _S_VERSION);
+        wp_enqueue_style('optika-shop-no-shop', get_template_directory_uri() . '/assets/css/shop-no-shop.css', array(), _S_VERSION);
     }
     if (is_single() && in_category(['sunglasses', 'accessories', 'frames_and_brands'])) {
-        wp_enqueue_style('optika-mobile-card-no-card', get_template_directory_uri() . '/assets/css/mobile-card-no-card.css', array(), _S_VERSION);
+        wp_enqueue_style('optika-card-no-card', get_template_directory_uri() . '/assets/css/card-no-card.css', array(), _S_VERSION);
     }
 
     // отменяем зарегистрированный jQuery
@@ -214,14 +145,15 @@ function optika_scripts()
 
     // Для страницы SHOP
     if ( is_shop() ) {
-        wp_enqueue_style('optika-mobile-shop', get_template_directory_uri() . '/assets/css/mobile-shop.css', array(), _S_VERSION);
-        wp_enqueue_script('mobShop', get_template_directory_uri() . '/assets/js/mobShop.js', array(), _S_VERSION, true);
+        wp_enqueue_style('optika-shop', get_template_directory_uri() . '/assets/css/shop.css', array(), _S_VERSION);
+        // wp_enqueue_style('optika-mobile-shop', get_template_directory_uri() . '/assets/css/mobile-shop.css', array(), _S_VERSION);
+        wp_enqueue_script('mobShop', get_template_directory_uri() . '/assets/js/mobShop.js', array(),false, null, true);
     }
     if (is_cart() || is_product()) {
         wp_enqueue_script('updn-quantitu', get_template_directory_uri() . '/assets/js/updn-quantitu.js', false, null, true);
     }
     if (is_product()) {
-        wp_enqueue_style('optika-mobile-card', get_template_directory_uri() . '/assets/css/mobile-card.css', array(), _S_VERSION);
+        wp_enqueue_style('optika-card', get_template_directory_uri() . '/assets/css/card.css', array(), _S_VERSION);
         wp_enqueue_script('optika-mobCard', get_template_directory_uri() . '/assets/js/mobCard.js', false, null, true);
     }
     if (is_cart()) {

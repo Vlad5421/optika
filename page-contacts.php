@@ -26,8 +26,9 @@ do_action( 'optika_woocommerce_breadcrumb' );
                     <div class="block__address">
                         <p style="text-align: left;">
                             <img src="<?php echo get_template_directory_uri()?>/assets/img/contact2.svg" alt="icon-addres">
-                            <span><strong>Наш адрес</strong>:. Новороссийск, проспект Дзержинского 211/2, ТЦ Перекресток, 1 эт.</span>
-                            <a href="#to-map" class="to-map">на карте</a>
+                            <a href="#to-map">
+                                <span><strong>Наш адрес</strong>:. Новороссийск, проспект Дзержинского 211/2, ТЦ Перекресток, 1 эт.</span>
+                            </a>
                         </p>
                         <p style="text-align: left;">
                             <img src="<?php echo get_template_directory_uri()?>/assets/img/contact3.svg" alt="icon-phone">
