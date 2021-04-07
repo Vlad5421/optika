@@ -147,7 +147,7 @@ function optika_scripts()
     if ( is_shop() ) {
         wp_enqueue_style('optika-shop', get_template_directory_uri() . '/assets/css/shop.css', array(), _S_VERSION);
         // wp_enqueue_style('optika-mobile-shop', get_template_directory_uri() . '/assets/css/mobile-shop.css', array(), _S_VERSION);
-        wp_enqueue_script('mobShop', get_template_directory_uri() . '/assets/js/mobShop.js', array(),false, null, true);
+        wp_enqueue_script('mobShop', get_template_directory_uri() . '/assets/js/mobShop.js', false, null, true);
     }
     if (is_cart() || is_product()) {
         wp_enqueue_script('updn-quantitu', get_template_directory_uri() . '/assets/js/updn-quantitu.js', false, null, true);

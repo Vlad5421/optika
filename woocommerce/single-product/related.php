@@ -47,11 +47,7 @@ if ( $related_products ) : ?>
 			<?php endforeach; ?>
 
 		<?php woocommerce_product_loop_end(); ?>
-		<!-- <script>
-			const opticaRubs = document.querySelectorAll('.woocommerce-Price-currencySymbol')
-			console.log(opticaRubs)
-			let newOpticaRubs = opticaRubs.map((el) => {el.text('руб')})
-		</script> -->
+
 	</section>
 	<?php
 endif;

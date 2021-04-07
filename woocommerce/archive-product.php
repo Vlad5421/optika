@@ -49,7 +49,7 @@ do_action( 'optika_woocommerce_breadcrumb' );
      */
     do_action( 'woocommerce_archive_description' );
     ?>
-</header>
+<!-- </header> -->
 
 <?php
 if ( woocommerce_product_loop() ) {
